@@ -1,0 +1,367 @@
+/* ================================================================
+   memepolis-xar.css
+   Tema xaringan para Memépolis-Lab
+   Paleta: navy #0f0f1e · ivory #e8e4d9 · accent #93c5fd
+   Tipografía: Playfair Display · Inter · Cormorant Garamond
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── PALETTE ─────────────────────────────────────────────────── */
+:root {
+  --bg:        #0f0f1e;
+  --bg-alt:    #151527;
+  --bg-card:   #1a1a30;
+  --border:    #2a2a48;
+  --text:      #e8e4d9;
+  --muted:     #9da3b4;
+  --accent:    #93c5fd;
+  --rose:      #fca5a5;
+  --sage:      #6ee7b7;
+  --amber:     #fbbf24;
+  --navy-dark: #1a1a2e;
+}
+
+/* ── BASE ────────────────────────────────────────────────────── */
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── SLIDE LAYOUT ────────────────────────────────────────────── */
+.remark-slide-content {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1.1rem 3.2rem 2.8rem;
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+/* ── HEADINGS ────────────────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 0;
+}
+h1 { font-size: 1.85em; font-weight: 800; }
+h2 {
+  font-size: 1.3em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.28em;
+  margin-bottom: 0.65em;
+}
+h3 {
+  font-size: 0.98em;
+  color: var(--rose);
+  font-style: italic;
+  border: none;
+  margin: 0.7em 0 0.3em;
+}
+
+/* ── TEXT ────────────────────────────────────────────────────── */
+p, li {
+  font-size: 0.88em;
+  line-height: 1.65;
+  font-weight: 500;
+}
+strong { color: var(--accent); }
+em     { color: var(--rose); font-style: italic; }
+a      { color: var(--accent); text-decoration-thickness: 1px; }
+
+/* ── LISTS ───────────────────────────────────────────────────── */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.3em 0;
+}
+ul li {
+  padding-left: 1.1em;
+  position: relative;
+  margin-bottom: 0.3em;
+}
+ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+/* ── BLOCKQUOTE ──────────────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid var(--accent);
+  background: transparent;
+  padding: 0.3em 1.1em;
+  margin: 0.6em 0;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.85em;
+  line-height: 1.65;
+}
+blockquote strong { color: var(--accent); font-style: normal; }
+
+/* ── INVERSE SLIDES ──────────────────────────────────────────── */
+.inverse {
+  background-color: var(--navy-dark) !important;
+  color: var(--text);
+}
+.inverse h1, .inverse h2, .inverse h3 {
+  color: var(--accent);
+  text-shadow: none;
+}
+
+/* ── COLUMNS ─────────────────────────────────────────────────── */
+.pull-left  { float: left;  width: 47%; }
+.pull-right { float: right; width: 47%; }
+
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.9rem;
+  margin: 0.5em 0 0.6em;
+}
+
+/* ── BOXES ───────────────────────────────────────────────────── */
+.box-blue, .box-rose, .box-sage, .box-amber {
+  border-radius: 4px;
+  padding: 0.65em 1.05em;
+  margin: 0.45em 0;
+  font-size: 0.86em;
+  line-height: 1.6;
+}
+.box-blue {
+  background: rgba(147,197,253,.07);
+  border: 1px solid rgba(147,197,253,.22);
+  border-left: 3px solid var(--accent);
+}
+.box-rose {
+  background: rgba(252,165,165,.06);
+  border: 1px solid rgba(252,165,165,.22);
+  border-left: 3px solid var(--rose);
+}
+.box-sage {
+  background: rgba(110,231,183,.06);
+  border: 1px solid rgba(110,231,183,.20);
+  border-left: 3px solid var(--sage);
+}
+.box-amber {
+  background: rgba(251,191,36,.05);
+  border: 1px solid rgba(251,191,36,.22);
+  border-left: 3px solid var(--amber);
+}
+.box-blue strong, .box-blue b { color: var(--accent); }
+.box-rose strong, .box-rose b { color: var(--rose); }
+.box-sage strong, .box-sage b { color: var(--sage); }
+.box-amber strong, .box-amber b { color: var(--amber); }
+
+/* ── TABLE ───────────────────────────────────────────────────── */
+.small-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72em;
+  line-height: 1.45;
+  margin-top: 0.4em;
+}
+.small-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+  padding: 0.4em 0.65em;
+  font-size: 0.85em;
+  text-align: left;
+  border-bottom: 2px solid rgba(147,197,253,.45);
+  background: transparent;
+}
+.small-table td {
+  padding: 0.45em 0.65em;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+.small-table tr:last-child td { border-bottom: none; }
+.small-table tr:nth-child(even) td { background: rgba(255,255,255,.018); }
+
+/* ── UTILITIES ───────────────────────────────────────────────── */
+.muted     { color: var(--muted); font-size: 0.82em; }
+.hr-thin   { border: none; border-top: 1px solid var(--border); margin: 0.65em 0; display: block; }
+.label-muted {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.58em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 0.3em;
+}
+
+/* ── VARLIST ─────────────────────────────────────────────────── */
+.varlist {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.72em;
+  color: var(--sage);
+  line-height: 1.75;
+  background: rgba(110,231,183,.04);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5em 0.85em;
+  margin-top: 0.4em;
+  display: block;
+}
+
+/* ── NUMBERED OBJECTIVES ─────────────────────────────────────── */
+.obj-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7em;
+  margin-bottom: 0.5em;
+  font-size: 0.88em;
+  line-height: 1.55;
+}
+.obj-num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #0f0f1e;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.78em;
+  line-height: 1;
+}
+
+/* ── AXIS ROWS ───────────────────────────────────────────────── */
+.axis-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 0.9em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: var(--text);
+}
+.axis-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  background: rgba(147,197,253,.12);
+  border: 1px solid rgba(147,197,253,.35);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.75em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ── CHIPS ───────────────────────────────────────────────────── */
+.chip-rose {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.1em 0.55em;
+  border-radius: 10px;
+  background: rgba(252,165,165,.10);
+  color: var(--rose);
+  border: 1px solid rgba(252,165,165,.3);
+  vertical-align: middle;
+}
+
+/* ── REFS & CONTACT (closing slide) ─────────────────────────── */
+.refs-line {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.64em;
+  color: var(--muted);
+  line-height: 1.85;
+}
+.contact-block {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68em;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.contact-block strong { color: var(--accent); font-weight: 600; }
+.contact-block code {
+  font-size: 0.88em;
+  color: var(--sage);
+  background: rgba(110,231,183,.06);
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+}
+
+/* ── CODE ────────────────────────────────────────────────────── */
+code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.80em;
+  color: var(--sage);
+  background: rgba(110,231,183,.07);
+  padding: 0.05em 0.32em;
+  border-radius: 3px;
+}
+
+/* ── FOOTER ──────────────────────────────────────────────────── */
+.remark-slide-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.52em;
+  color: var(--muted);
+  bottom: 0.9em;
+  right: 1.8em;
+}
+
+/* ── PROGRESS BAR ────────────────────────────────────────────── */
+.remark-progress-bar {
+  background-color: var(--accent);
+  height: 2px;
+}
+
+/* ── TITLE SLIDE (seal: true) ───────────────────────────────── */
+.title-slide {
+  background-color: var(--navy-dark);
+  color: var(--text);
+  text-align: left;
+  padding: 2.5rem 3.2rem;
+}
+.title-slide h1 {
+  font-size: 2.1em;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 0.2em;
+}
+.title-slide h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05em;
+  font-weight: 400;
+  color: var(--muted);
+  border: none;
+  padding: 0;
+  margin-bottom: 1.2em;
+}
+.title-slide .author,
+.title-slide .date,
+.title-slide .institute {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68em;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.title-slide .author { color: var(--text); font-weight: 500; }

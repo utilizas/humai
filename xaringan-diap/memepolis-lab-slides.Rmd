@@ -1,0 +1,318 @@
+---
+title: "Memépolis-Lab"
+subtitle: "Análisis computacional de la erosión epistémica<br>en la comunicación política contemporánea (2023–2026)"
+author: "Miguel Moreno"
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: "%current% / %total%"
+    seal: true
+bibliography: references.bib
+---
+
+
+## Problema de investigación
+
+**El colapso performativo del liderazgo político contemporáneo.**
+
+.pull-left[
+
+- Un conjunto acotado de líderes —Trump, Milei, Bukele,
+  Netanyahu, Meloni, Orbán— gobierna en **registro memético**.
+
+- Brevedad · carga afectiva · indeterminación factual ·
+  diseño para redistribución viral.
+
+- Las instituciones responsivas —prensa, aparato
+  diplomático, *fact-checking*— responden en registro
+  argumentativo.
+
+- La asimetría de velocidad convierte la respuesta en
+  *comentario tardío*.
+
+]
+
+.pull-right[
+
+.box-amber[
+**Diagnóstico central**
+
+La incompatibilidad no es técnica sino **estructural**:
+dos regímenes de circulación epistémica operando en
+simultaneidad sin interfaz común.
+]
+
+]
+
+---
+
+## Marco teórico — cinco vectores convergentes
+
+.small-table[
+
+| Autor | Año | Concepto clave | Aportación |
+|:------|----:|:---------------|:-----------|
+| Hall | 1980 | Codificación / decodificación | Lecturas incompatibles en coexistencia estructural |
+| Frankfurt | 2005 | *Bullshit* vs. mentira | Indiferencia al valor de verdad como posición activa |
+| Baudrillard | 1994 | Simulacro | El gesto equivale a la representación; la referencia desaparece |
+| Haidt | 2012 | Epistemología tribal | Reconocibilidad grupal > veracidad individual |
+| Mercier & Sperber | 2017 | Razón argumentativa | La razón como recurso retórico grupal, no epistémico |
+
+]
+
+--
+
+.box-blue[
+Los cinco describen —desde vocabularios incompatibles— una misma estructura:
+**pertenencia grupal como criterio primario**, eficacia viral como métrica de éxito.
+]
+
+---
+
+## Pregunta, hipótesis y objetivos
+
+.pull-left[
+
+.box-blue[
+**Pregunta rectora**
+
+¿En qué medida la comunicación política contemporánea se ha
+reorganizado en torno a una **economía de la redistribución
+viral** y con qué consecuencias epistémicas?
+]
+
+.box-rose[
+**Hipótesis**
+
+El liderazgo memético no es un accidente comunicativo sino
+una **adaptación óptima al ecosistema**. Las respuestas
+institucionales fracasan por incompatibilidad estructural de
+registro, no por insuficiencia técnica.
+]
+
+]
+
+.pull-right[
+
+**Objetivos**
+
+.obj-row[.obj-num[1] Construir un marco teórico de convergencia (§1).]
+
+.obj-row[.obj-num[2] Documentar un corpus codificado de piezas 2023–2026 (§2–3).]
+
+.obj-row[.obj-num[3] Derivar implicaciones para comunicación política y universidad pública (§4).]
+
+]
+
+---
+
+## Corpus y metodología
+
+.pull-left[
+
+.box-blue[
+**Diseño mixto secuencial · fase cualitativa dominante**
+
+- **Período:** enero 2023 – marzo 2026
+- **N inicial:** 50 piezas documentadas (ampliable)
+- **Triple lectura:** inventario formal + lectura Hall + asignación a eje
+- **Codificación:** dos codificadores independientes; anexo de desacuerdos
+]
+
+]
+
+.pull-right[
+
+**Ejes empíricos**
+
+.axis-row[.axis-num[1] Memetización de la guerra]
+.axis-row[.axis-num[2] Liderazgo memético]
+.axis-row[.axis-num[3] IA como acelerador memético]
+
+.hr-thin[]
+
+.label-muted[Variables principales]
+
+.varlist[
+`fecha` · `plataforma` · `lider_asociado` · `region`  
+`alcance_estimado` · `categoria_memetica` · `eje_empirico`
+]
+
+]
+
+---
+
+## Eje 1 — Memetización de la guerra
+
+Gaza (2023–25) y Ucrania (2022– ) producen el primer gran corpus en el
+que piezas meméticas operan simultáneamente como:
+
+.three-col[
+
+.box-blue[
+.label-muted[función 1]  
+Comentario político
+]
+
+.box-rose[
+.label-muted[función 2]  
+Documentación de presuntos crímenes de guerra
+]
+
+.box-amber[
+.label-muted[función 3]  
+Propaganda
+]
+
+]
+
+.muted[… con frecuencia en la misma imagen.]
+
+--
+
+> El modelo de Hall deja de ser metáfora interpretativa: la pieza,
+> idéntica en su significante, se decodifica de modos incompatibles por
+> comunidades distintas, y **esa incompatibilidad no es un defecto del
+> dispositivo sino su función**.
+
+
+---
+
+## Eje 2 — Liderazgo memético
+
+.label-muted[Caso: Trump–Irán, junio 2025]
+
+.pull-left[
+
+.box-blue[
+**Dispositivo**
+
+Secuencia de publicaciones en registro memético comunicando
+**decisiones militares** en tiempo real.
+]
+
+.box-rose[
+**Efecto estructural**
+
+Las instituciones responsivas llegan en posición de
+*segundo movimiento* —la posición epistémicamente perdedora.
+]
+
+]
+
+.pull-right[
+
+.box-sage[
+**Hallazgo**
+
+Lo que la v1 denominó *fact-checking distribuido* no es
+un problema de velocidad, sino de **arquitectura temporal**:
+]
+
+> La verificación honesta de cualquier afirmación no trivial
+> es **incompatible** con la ventana de redistribución viral.
+
+]
+
+---
+
+## Eje 3 — IA como acelerador memético
+
+El fenómeno relevante de 2025–26 no son los memes *sobre* IA,
+sino los memes **producidos por** IA.
+
+.pull-left[
+
+.box-amber[
+**La pregunta filosófica**
+
+¿Puede un meme generado por un modelo sin comprensión
+irónica funcionar como **vehículo epistémico** del mismo
+modo que uno generado por un agente que *entiende* el chiste?
+]
+
+]
+
+.pull-right[
+
+.box-rose[
+**La respuesta incómoda**
+
+Si lo que importa es el efecto en la circulación, la
+distinción entre complicidad real y simulada deja de ser
+operativa **exactamente en el momento** en que deja de ser
+verificable desde fuera.
+]
+
+]
+
+.hr-thin[]
+
+.chip-rose[corolario] .muted[La agencia epistémica no es una propiedad del emisor sino del circuito de redistribución.]
+
+---
+
+## Implicaciones
+
+.pull-left[
+
+### Comunicación política
+
+Los manuales heredados describen un régimen (~1965–2012)
+que el liderazgo memético ha vuelto **operativamente obsoleto**.
+
+.box-rose[
+Las respuestas basadas en *press release* y *fact-checking*
+tradicional no tocan el fenómeno: intervienen en una capa
+que ya no es la capa estructurante.
+]
+
+]
+
+.pull-right[
+
+### Universidad pública
+
+La universidad nunca fue una institución que *corrigiera*
+el pensamiento tribal; fue una que lo **suspendía** mediante
+incentivos estructurales específicos.
+
+.box-amber[
+Cuando esos incentivos se debilitan, la ventaja competitiva
+de la racionalidad argumentativa desaparece también
+**dentro** del campus.
+]
+
+]
+
+---
+
+## Conclusiones
+
+.box-blue[
+**Tesis resultante**
+
+La comunicación política se ha reorganizado en torno a una
+**economía de la redistribución viral**. El meme político no
+es síntoma, sino instrumento central de esa reorganización.
+]
+
+.hr-thin[]
+
+.refs-line[
+**Referencias clave:** Hall (1980) · Frankfurt (2005) · Baudrillard (1994) · Haidt (2012) · Mercier & Sperber (2017)  
+Benkler *et al.* (2018) · Wardle & Derakhshan (2017) · Donovan *et al.* (2022) · Moreno Muñoz (2026)
+]
+
+.hr-thin[]
+
+.contact-block[
+**Miguel Moreno Muñoz** · Universidad de Granada  
+ORCID: `0000-0002-0746-9587` · DOI: `10.5281/zenodo.XXXXXXX`
+]
